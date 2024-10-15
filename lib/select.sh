@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-source ./utility.sh
-source ./modify/modifyAll.sh
+declare LIB_DIRECTORY="/usr/local/lib/select-theme"
+
+source "$LIB_DIRECTORY/utility.sh"
+source "$LIB_DIRECTORY/modify/modifyAll.sh"
 
 declare -r themes=(
     "$CATPPUCCIN" \

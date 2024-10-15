@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-source ./utility.sh
+declare LIB_DIRECTORY="/usr/local/lib/select-theme"
+source "$LIB_DIRECTORY/utility.sh"
 
 function polybar() {
     local theme="$1"

@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+declare LIB_DIRECTORY="/usr/local/lib/select-theme"
+source "$LIB_DIRECTORY/utility.sh"
+
 declare catppucccin="#8cde8c"
 declare rosepine="#c4a7e7"
 declare everforest="#a7c080"

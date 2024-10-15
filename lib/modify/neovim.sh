@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+
+declare LIB_DIRECTORY="/usr/local/lib/select-theme"
+source "$LIB_DIRECTORY/utility.sh"
+
 function neovim() {
     local theme="$1"
 
