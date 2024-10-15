@@ -28,18 +28,26 @@ function printColor() {
 
     case "$color" in
         "green")
-            echo -e "\n$green$text$noColor\n"
+            echo -e "$green$text$noColor"
             ;;
         "red")
-            echo -e "\n$red$text$noColor\n"
+            echo -e "$red$text$noColor"
             ;;
         "yellow")
-            echo -e "\n$yellow$text$noColor\n"
+            echo -e "$yellow$text$noColor"
             ;;
         *)
-            echo -e "\n$text$noColor\n"
+            echo -e "$text$noColor"
     esac
 }
 
+function printStatusMessage() {
+    local app="$1"
 
+    if [[ "$?" -eq 0 ]]; then
+        printColor "green" "Successfully set theme for $app"
+    else
+        printColor "red" "Could not set theme for $app"
+    fi
+}
 

@@ -26,4 +26,6 @@ function kitty() {
 
     echo -e "@theme \"$themeFile\"" > "$forwardFile"
     echo "include $themeFile" > $forwardFile
+
+    printStatusMessage "kitty"
 }

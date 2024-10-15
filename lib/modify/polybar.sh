@@ -33,4 +33,6 @@ function polybar() {
     echo "include-file = $themeFile" > "$forwardFile"
     killall -q polybar
     nohup "$HOME/.config/polybar/launch.sh" > /dev/null 2>&1 &
+
+    printStatusMessage "polybar"
 }

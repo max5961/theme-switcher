@@ -25,4 +25,6 @@ function rofi() {
     local forwardFile="$HOME/.config/rofi/colors.rasi"
 
     echo -e "@theme \"$themeFile\"" > "$forwardFile"
+
+    printStatusMessage "rofi"
 }

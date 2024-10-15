@@ -23,10 +23,13 @@ function selectTheme() {
             exit 0
         fi
 
+        echo ""
         if [[ -z "$theme" ]]; then
             printColor "red" "No theme selected!"
+            echo ""
         else
             printColor "green" "Modifying theme to $theme"
+            echo ""
             modifyAll "$theme"
         fi
 

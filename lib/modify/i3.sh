@@ -36,4 +36,6 @@ function i3() {
     echo -e "default_border pixel 3" >> $forwardFile
     echo -e "client.focused \$borderColor \$borderColor \$borderColor \$borderColor" >> $forwardFile
     echo -e "client.focused_inactive \$inactiveBorderColor \$inactiveBorderColor \$inactiveBorderColor \$inactiveBorderColor" >> $forwardFile
+
+    printStatusMessage "i3"
 }

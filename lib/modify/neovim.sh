@@ -25,4 +25,6 @@ function neovim() {
     local forwardFile="$HOME/.config/nvim/lua/colorscheme.lua"
 
     echo -e "$fileContents" > $forwardFile;
+
+    printStatusMessage "neovim"
 }

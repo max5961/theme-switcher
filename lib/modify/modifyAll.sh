@@ -17,5 +17,7 @@ function modifyAll() {
     rofi "$theme"
     neovim "$theme"
     i3 "$theme"
+
+    echo ""
 }
 
